@@ -1,0 +1,207 @@
+<html>
+  <head>
+    <meta name="description" content="J Component">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="author" content="Chetan , Isha & Dinesh">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      JobEase - Online Job Portal
+    </title>
+    <link rel="stylesheet" type="text/css" href="template.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <link rel="stylesheet" type="text/css" href="employer.css">
+    <script type="text/javascript">
+    function formvalid() 
+      {
+        var fname= document.getElementById("fullname").value;
+        var phno= document.getElementById("m_num").value;
+        var eids= document.getElementById("email1").value;
+        var pwd= document.getElementById("pass").value
+        var cit= document.getElementById("address").value;
+        var stt= document.getElementById("state").value;
+        var ql=document.getElementById("qual").value;
+
+        if(fname!=fname.match(/[A-Za-z]{1,20}/i))
+        {
+          document.getElementById('flname').innerHTML="Alphabets only";
+        }
+        else
+        {
+          document.getElementById('flname').innerHTML="";
+        }
+        if (phno!=phno.match(/^[1-9]{1}[0-9]{9}$/))
+        {
+            document.getElementById('m_no').innerHTML="Invalid Phone Number";
+        }
+        else
+        {
+          document.getElementById('m_no').innerHTML="";
+        } 
+        if (eids!=eids.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i))
+        {
+            document.getElementById('eid1').innerHTML="Invalid Email ID";
+        }
+        else
+        {
+          document.getElementById('eid1').innerHTML="";
+        }
+        if (pwd!=pwd.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}$/))
+        {
+            document.getElementById('psd').innerHTML="8-15 letters 1 caps 1 number";
+        }
+        else
+        {
+          document.getElementById('psd').innerHTML="";
+        } 
+        if (cit!=cit.match(/[a-zA-Z]{1,15}/i))
+        {
+             document.getElementById('loc').innerHTML="Invalid City";
+        }
+        else
+        {
+          document.getElementById('loc').innerHTML="";
+        }
+        if (stt!=stt.match(/[a-zA-Z]{1,20}/i))
+        {
+            document.getElementById('sat').innerHTML="Invalid State";
+        }
+        else
+        {
+          document.getElementById('sat').innerHTML="";
+        } 
+        if(ql=" ")
+        {
+          document.getElementById('study').innerHTML="Cannot be Empty";
+        }
+        else
+        {
+          document.getElementById('study').innerHTML="";
+        }
+
+
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <span>JobEase</span>
+      </div>
+    </nav>
+    <main>
+      <div class="emp_intro">
+        <center>
+        <span>JOBEASE EMPLOYER ZONE</span><br><br><br>
+        <i>Hiring is Simpler, Smarter &<br>
+        Faster with JobEase.com</i>
+      </center>
+      </div>
+      <div class="para4">
+        <div class="emp_form">
+          <center>
+            <span>JobEase is India’s No.1 Platform<br>
+                  for Talent Acquisition</span>
+          <br><br><br>
+          <form method="post" action="emp_connect.php">
+          <input type="text" id="name" class="reg_cus" name="cname" required placeholder="Enter Company Name*">
+                <span id="cname"></span>
+                <br><br><br>
+                <input type="text" class="reg_cus" id="email" name="id" required placeholder="Enter Official Email Address*">
+                <span id="eid1"></span>
+                <br><br><br>
+                <input type="Password" class="reg_cus" id="pass" name="pss" required  placeholder="Create a Strong Password*">
+                <span id="psd"></span>
+                <br><br><br>
+                <input type="text" class="reg_cus" id="pname" name="cpname" required  placeholder="Contact Person Name*">
+                <span id="loc"></span>  
+                <br><br><br>
+                <input type="text" class="reg_cus" id="m_number" name="phone" required  placeholder="Company Mobile/Landline Number*">
+                <span id="m_no"></span>
+                <br><br><br>
+                <input type="text" class="reg_cus" id="add" name="address" required  placeholder="Official Address*">
+                <span id="m_no"></span>
+                <br><br><br>
+                <input type="text" class="reg_cus" id="pin" name="pcode" required  placeholder="Pincode*">
+                <span id="sat"></span>
+                <br><br><br>
+                <input type="submit" name="Submit" value="Submit" class="btn1" onclick="formvalid();">
+                </form>
+          </center>
+        </div>
+      </div>
+      <div class="attractions">
+        <center>
+        <div class="drop">
+          <img src="speed.png"><br>
+          <span>2 Minutes to Post</span><br><br>
+          Quick and easy to post job posting with highly optimised job posting form
+        </div>
+        <div class="drop">
+          <img src="team.png"><br>
+          <span>Attract Audience</span><br><br>
+          Reach to over 6.87 crore talented jobseekers
+        </div>
+        <div class="drop">
+          <img src="clock.png"><br>
+          <span>30 days visibility</span><br><br>
+          Get quality applies guaranteed with 30 days visibility of your job ads.
+        </div>
+      </center>
+      </div>
+    </main>
+    <footer>
+      <div>
+      <span class="address">
+        <h3>JobEase FastForward Services</h3>
+
+        Toll Free Number: 1800-102-5557 , 1800-572-5557<br>
+        Work Timings: 9.30 AM to 6.30 PM<br>
+        Working Days: Monday to Saturday<br>
+        Email Id: service@jobease.com<br><br>
+
+        International Clients: +91 120 4021100<br> 
+        (9.30 AM to 6.00 PM IST)
+      </span>
+      <span class="jobseekers">
+        <h3>Jobseekers</h3>
+
+        <a>Register Now</a><br>
+        <a>Search Jobs</a><br>
+        <a>Login</a><br>
+        <a>Create Job Alert</a><br>
+        <a>Report a Problem</a><br>
+      </span>
+      <span class="browse">
+        <h3>Browse Jobs</h3>
+
+        Browse All Jobs<br>
+        Jobs by Company<br>
+        Jobs by Category<br>
+        Jobs by Designation<br>
+        Jobs by Location<br>
+        Jobs by Skill<br>
+      </span>
+      <span class="employers">
+        <h3>Employers</h3>
+
+        Job Posting<br>
+        Resume Database Access<br>
+        Report a Problem<br>
+        Recruiter Register</a>
+        
+        <h3>ADMIN LOGIN</h3>
+      </span>
+      <span class="follow">
+        <h3>Follow Us</h3>
+        <img src="facebook.png"><br>
+        <img src="instagram.png"><br>
+        <img src="linkedin.png"><br>
+        <img src="twitter.png">
+      </span>
+      </div>
+    </footer>
+  </body>
+ </html>

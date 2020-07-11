@@ -1,0 +1,63 @@
+.contact_form{
+	background-image: url('contact.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 700px;
+	padding: 200px 0px;
+	align-items: center;
+	text-align: center;
+}
+.contact_form span{
+	font-size: 72px;
+	line-height: 87px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: #3F4168;
+	text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+.form_box{
+	width: 641px;
+	height: 537px;
+	margin-top: 70px;
+	background: rgba(63, 65, 104, 0.8);
+	border-radius: 30px;
+}
+.form_box input[type=text]{
+	border: 2px solid #A6B3DD;
+	border-radius: 15px;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.03em;
+	color: #ECF0F9;
+	width: 350px;
+	height: 50px;
+	background-color: rgba(255, 255, 255, 0);
+	padding: 0px 5px;
+}
+.form_box input[type=submit]{
+	width: 235px;
+	height: 45px;
+	border: 3px solid #A6B3DD;
+	border-radius: 30px;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	margin-right: 45px;
+	background-color: rgba(255, 255, 255, 0);
+	color: #ECF0F9;
+}
+#label1,#label2,#label3{
+	font-size: 22px;
+	color: red;
+
+}
+::placeholder
+{
+	color: white;
+}
+table{
+	 border-spacing: 0px 10px;
+}

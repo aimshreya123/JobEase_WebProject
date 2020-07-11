@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <meta name="description" content="J Component">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="author" content="Chetan , Isha & Dinesh">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      JobEase - Online Job Portal
+    </title>
+    <link rel="stylesheet" type="text/css" href="template.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script type="text/javascript">
+   function formvalid()
+    {
+      var fname=document.getElementById("name").value;
+      var eid= document.getElementById("email").value;
+      var mobile= document.getElementById("m_number").value;
+
+        if (fname!=fname.match(/[A-Za-z]{1,20}/i))
+        {
+          document.getElementById('label1').innerHTML="Alphabets only";
+        }
+        else
+        {
+        	document.getElementById('labell').innerHTML="";
+        }
+        
+        if (eid!=eid.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/))
+        {
+          document.getElementById('label2').innerHTML="Invalid Email-ID";
+        }
+        else
+        {
+          document.getElementById('label2').innerHTML="";
+        }
+        if (mobile!=mobile.match(/^[1-9]{1}[0-9]{9}$/))
+        {
+            document.getElementById('label3').innerHTML="Invalid Phone Number";
+        }
+        else
+        {
+          document.getElementById('label3').innerHTML="";
+        }
+    }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <span><a href="index1.html">JobEase</a></span>
+        <ul>
+          <li><a href="register.html">Login/Register</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index1.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="contact_form">
+        <center>
+        <span>CONTACT US</span>
+        <div class="form_box">
+          <br><br>
+          <form>
+          	<table>
+          		<tr>
+          			<td>
+          			<input type="text" id="name" name="Fname" class="reg_cus" required placeholder="Enter your Full Name*">
+          			</td>
+          			<td>
+          				<span id=label1></span>
+          			</td>
+          		</tr>
+          		<tr>
+          			<td>
+          				<input type="text" class="reg_cus" name="Email" id="email" required placeholder="Enter Your Email Address*">
+          			</td>
+          			<td>
+          				<span id=label2></span>
+          			</td>
+          		</tr>
+          		<tr>
+          			<td>
+          				<input type="text" class="reg_cus" name="Mobile" id="m_number" required  placeholder="Enter Your Phone Number*">
+          			</td>
+          			<td>
+          				<span id=label3></span>
+          			</td>
+          		</tr>
+          		<tr>
+          			<td>
+          				<input type="text" id="msg" maxlength="50" name="msg" placeholder="Share your Feedback or Idea*">
+          			</td>
+          			<td>
+          				
+          			</td>
+          		</tr>
+          	</table>
+                  <br><br>
+                  <input type="submit" name="Submit" value="Send Message" class="btn1" onclick="formvalid();">
+                  <input type="submit" name="Reset" value="Clear" class="btn1" onclick="Reset();">
+            </form>
+        </div>
+        </center>
+      </div>
+    </main>
+    <footer>
+      <div>
+      <span class="address">
+        <h3>JobEase FastForward Services</h3>
+
+        Toll Free Number: 1800-102-5557 , 1800-572-5557<br>
+        Work Timings: 9.30 AM to 6.30 PM<br>
+        Working Days: Monday to Saturday<br>
+        Email Id: service@jobease.com<br><br>
+
+        International Clients: +91 120 4021100<br> 
+        (9.30 AM to 6.00 PM IST)
+      </span>
+      <span class="jobseekers">
+        <h3>Jobseekers</h3>
+
+        <a>Register Now</a><br>
+        <a>Search Jobs</a><br>
+        <a>Login</a><br>
+        <a>Create Job Alert</a><br>
+        <a>Report a Problem</a><br>
+      </span>
+      <span class="browse">
+        <h3>Browse Jobs</h3>
+
+        Browse All Jobs<br>
+        Jobs by Company<br>
+        Jobs by Category<br>
+        Jobs by Designation<br>
+        Jobs by Location<br>
+        Jobs by Skill<br>
+      </span>
+      <span class="employers">
+        <h3>Employers</h3>
+
+        Job Posting<br>
+        <a href="employer.html">Recruiter Register</a><br>
+        Resume Database Access<br>
+        Report a Problem
+
+        <h3>ADMIN LOGIN</h3>
+      </span>
+      <span class="follow">
+        <h3>Follow Us</h3>
+        <img src="facebook.png"><br>
+        <img src="instagram.png"><br>
+        <img src="linkedin.png"><br>
+        <img src="twitter.png">
+      </span>
+      </div>
+    </footer>
+  </body>
+ </html>

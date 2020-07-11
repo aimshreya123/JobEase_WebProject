@@ -1,0 +1,95 @@
+.reg_intro h2{
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 58px;
+	text-align: center;
+	color: #E55A00;
+}
+.reg_intro h4{
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+
+	color: #353454;
+
+}
+.reg_intro{
+	margin-top: 200px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	height: 400px;
+	color: #A6B3DD;
+}
+.reg_intro span{
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+
+	color: #E55A00;
+}
+.para3{
+	width: 1440px;
+	height: 830px;
+	background-image: url('reg.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.para3 input[type=text]{
+	width: 480px;
+	height: 40px;
+	background: #ECF0F9;
+	border: 1px solid #353454;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	color: rgba(53, 52, 84, 0.9);
+	margin-bottom: 20px;
+}
+.para3 input[type=password]{
+	width: 480px;
+	height: 40px;
+	background: #ECF0F9;
+	border: 1px solid #353454;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	color: rgba(53, 52, 84, 0.9);
+	margin-bottom: 20px;
+}
+.para3 select{
+	width: 480px;
+	height: 40px;
+	background: #ECF0F9;
+	border: 1px solid #353454;
+	box-sizing: border-box;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	color: rgba(53, 52, 84, 0.9);
+	margin-bottom: 20px;
+}
+.para3 input[type=submit]{
+	background: #353454;
+	border: 1px solid #A6B3DD;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	width: 200px;
+	height: 40px;
+	color: #ECF0F9;
+	margin-top: 70px;
+}
+::placeholder
+{
+	color: black;
+}
+table{
+	border-spacing: 0px,10px;
+}
+#flname,#m_no,#eid1,#psd,#loc,#sat,#study
+{
+	color: red;
+	font-size: 22px;
+}

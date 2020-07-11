@@ -1,0 +1,35 @@
+.parallax2{
+	margin-top: 120px;
+	background-image: url('para2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 350px;
+	text-align: center;
+}
+.parallax2 span{
+	font-family: Cabin Condensed;
+font-style: normal;
+font-weight: bold;
+font-size: 144px;
+line-height: 175px;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #353454;
+
+text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+.about_us{
+	padding: 100px;
+	font-family: Cabin;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+text-align: justify;
+
+color: #E55A00;
+
+}

@@ -1,0 +1,53 @@
+.dashboard{
+	height: 750px;
+	margin-top: 120px;
+}
+.sidemenu{
+	float: left;
+	width: 300px;
+	height: 750px;
+	background: rgba(53, 52, 84, 0.95);
+	color: #ECF0F9;
+}
+.sidemenu h1{
+	text-align: center;
+}
+.sidemenu h3{
+	color: #E55A00;
+	font-size: 22px;
+	text-align: center;
+}
+.sidemenu ul{
+	list-style-type: none;
+}
+.sidemenu li{
+	padding: 10px 25px;
+}
+.sidemenu a{
+	text-decoration: none;
+	color: #ECF0F9;
+	text-align: justify;
+	cursor: pointer;
+}
+.welcome{
+	color: #E55A00;
+	float: right;
+	width: 80%;
+	height: 750px;
+}
+.welcome img{
+	width: 900px;
+	height: 600px;	
+}
+
+.welcome h1{
+	font-size: 60px;
+	letter-spacing: 20px;
+}
+.c1{
+	width: 80%;
+	height: 750px;
+	text-align: center;
+	font-size: 20px;
+	padding: 50px;
+}

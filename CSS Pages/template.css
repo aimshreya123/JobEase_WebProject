@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+body{
+  padding : 0px ;
+  margin : 0px;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+}
+u{
+  color: #A6B3DD;
+}
+nav{
+  width: 100%;
+}
+nav div{
+  background: #353454;
+  z-index: 1;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  width: 98%;
+  height: 80px;
+  padding: 20px 20px 20px 60px;
+  color: #ECF0F9;
+  top:0;
+  position: fixed;
+} 
+span{
+  font-family: "Cabin Condensed";
+  font-size: 65px;
+}
+nav ul{
+  margin-top:-50px;
+}
+nav li{
+  float: right;
+  display: inline-block;
+  list-style-type: none;
+  font-size: 24px;
+  margin-right:50px;
+}
+nav a{
+  text-decoration:none;
+  color: #ECF0F9;
+}
+footer div{
+  font-family: "Cabin Condensed";
+  bottom: 0px;
+  background: #353454;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  height:350px;
+  width: 99%;
+  padding:80px 0px 100px 100px;
+  color: #A6B3DD;
+}
+.address{
+  font-size: 22px;
+  float: left;
+  margin-right: 70px;
+}
+.jobseekers{
+  font-size: 22px;
+  float: left;
+  margin-right: 60px;
+}
+.browse{
+  font-size: 22px;
+  float: left;
+  margin-right: 60px;
+}
+.employers{
+  font-size:22px;
+  float: left;
+  margin-right: 60px;
+}
+.follow{
+  font-size:22px;
+  float: left;
+}
+.follow img{
+  height: 50px;
+  width: 50px;
+  padding: 10px 20px;
+}
+main{
+  width: 100%;
+}

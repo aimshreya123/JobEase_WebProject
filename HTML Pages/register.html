@@ -1,0 +1,246 @@
+<html>
+  <head>
+    <meta name="description" content="J Component">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="author" content="Chetan , Isha & Dinesh">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      JobEase - Online Job Portal
+    </title>
+    <link rel="stylesheet" type="text/css" href="template.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="register.css">
+    <script type="text/javascript">
+    function formvalid() 
+      {
+        var fname= document.getElementById("fullname").value;
+        var phno= document.getElementById("m_num").value;
+        var eids= document.getElementById("email1").value;
+        var pwd= document.getElementById("pass").value;
+        var cit= document.getElementById("address").value;
+        var stt= document.getElementById("state").value;
+        var ql=document.getElementById("qual").value;
+
+        if(fname!=fname.match(/[A-Za-z]{1,20}/i))
+        {
+          document.getElementById('flname').innerHTML="Alphabets only";
+        }
+        else
+        {
+          document.getElementById('flname').innerHTML="";
+        }
+        if (phno!=phno.match(/^[1-9]{1}[0-9]{9}$/))
+        {
+            document.getElementById('m_no').innerHTML="Invalid Phone Number";
+        }
+        else
+        {
+          document.getElementById('m_no').innerHTML="";
+        } 
+        if (eids!=eids.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i))
+        {
+            document.getElementById('eid1').innerHTML="Invalid Email ID";
+        }
+        else
+        {
+          document.getElementById('eid1').innerHTML="";
+        }
+        if (pwd!=pwd.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}$/))
+        {
+            document.getElementById('psd').innerHTML="8-15 letters 1 caps 1 number";
+        }
+        else
+        {
+          document.getElementById('psd').innerHTML="";
+        } 
+        if (cit!=cit.match(/[a-zA-Z]{1,15}/i))
+        {
+             document.getElementById('loc').innerHTML="Invalid City";
+        }
+        else
+        {
+          document.getElementById('loc').innerHTML="";
+        }
+        if (stt!=stt.match(/[a-zA-Z]{1,20}/i))
+        {
+            document.getElementById('sat').innerHTML="Invalid State";
+        }
+        else
+        {
+          document.getElementById('sat').innerHTML="";
+        } 
+        if(ql=" ")
+        {
+          document.getElementById('study').innerHTML="Cannot be Empty";
+        }
+        else
+        {
+          document.getElementById('study').innerHTML="";
+        }
+
+
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <span><a href="index1.html">JobEase</a></span>
+        <ul>
+          <li>Already Registered? <a href="login.html"><u>Login Here</u></a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="index1.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <center>
+        <div class="reg_intro">
+        <h2>More than 3 lakhs Jobs | More than 1 lakh Recruiters</h2>
+
+
+        <h4>After you register, you can:</h4>
+
+        - Apply to jobs from the site while keeping your resume hidden from all recruiters.<br> 
+        - Mark yourself as a 'passive jobseeker' if you are not actively looking for a job.<br>   
+        - Block your company or other specific companies from viewing your profile.<br><br><br>
+        <span>Find the right job on JobEase.com. You are only few steps away from millions of jobs!</span>
+      </div>
+      <div class="para3">
+        <form method="post" action="connectivity.php" >
+          <br><br><br>
+          <table>
+            <tr>
+              <td>
+                <input type="text" id="fullname" class="reg_cus" required name="fname" placeholder="Enter your Full Name*">
+              </td>
+              <td>
+                <span id="flname"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" class="reg_cus" id="m_num" required name="Phone" placeholder="Enter your phone number where recruiter can call you...*">
+              </td>
+              <td>
+                <span id="m_no"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" class="reg_cus" id="email1" required name="email" placeholder="Enter your relevant email address to recieve job offers...*">
+              </td>
+              <td>
+                <span id="eid1"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="Password" class="reg_cus" id="pass" required name="Password" placeholder="Create a Strong Password*">
+              </td>
+              <td>
+                <span id="psd"></span>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+              <td>
+                <label for="gender">Gender</label>
+              </td>
+              <td>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other
+              </td>
+            </tr>
+            </table>
+            <table>
+              <tr>
+              <td>
+                <input type="text" class="reg_cus" id="qual" required name="Qualification" placeholder="Your highest Qualification*">
+              </td>
+              <td>
+                <span id="study"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" class="reg_cus" id="address" required name="Address" placeholder="Tell us your current location*">
+              </td>
+              <td>
+                <span id="loc"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" class="reg_cus" id="city" required name="City" placeholder="Your City*">
+              </td>
+              <td>
+                <span id="sat"></span>
+              </td>
+            </tr>
+            
+          </table>
+              <input type="submit" name="Submit" value="Register" class="btn1" onclick="formvalid();">
+        </form>
+      </div>
+      </center>
+    </main>
+    <footer>
+      <div>
+      <span class="address">
+        <h3>JobEase FastForward Services</h3>
+
+        Toll Free Number: 1800-102-5557 , 1800-572-5557<br>
+        Work Timings: 9.30 AM to 6.30 PM<br>
+        Working Days: Monday to Saturday<br>
+        Email Id: service@jobease.com<br><br>
+
+        International Clients: +91 120 4021100<br> 
+        (9.30 AM to 6.00 PM IST)
+      </span>
+      <span class="jobseekers">
+        <h3>Jobseekers</h3>
+
+        <a>Register Now</a><br>
+        <a>Search Jobs</a><br>
+        <a>Login</a><br>
+        <a>Create Job Alert</a><br>
+        <a>Report a Problem</a><br>
+      </span>
+      <span class="browse">
+        <h3>Browse Jobs</h3>
+
+        Browse All Jobs<br>
+        Jobs by Company<br>
+        Jobs by Category<br>
+        Jobs by Designation<br>
+        Jobs by Location<br>
+        Jobs by Skill<br>
+      </span>
+      <span class="employers">
+        <h3>Employers</h3>
+
+        Job Posting<br>
+        <a href="employer.html">Recruiter Register</a><br>
+        Resume Database Access<br>
+        Report a Problem
+        
+        
+        <h3>ADMIN LOGIN</h3>
+      </span>
+      <span class="follow">
+        <h3>Follow Us</h3>
+        <img src="facebook.png"><br>
+        <img src="instagram.png"><br>
+        <img src="linkedin.png"><br>
+        <img src="twitter.png">
+      </span>
+      </div>
+    </footer>
+    
+  </body>
+ </html>
